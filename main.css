@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', 'Poppins', sans-serif;
+}
+.pageHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f3f2;
+}
+
+.headerImg {
+    display: flex;
+    align-items: center;
+    height: 330px;
+}
+
+.headerImg img {
+    cursor: pointer;
+}
+
+.navBar{
+    align-items: center;
+    display: flex;
+    /* height: var(--headerHeight); */
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+
+    border-bottom: solid 3px #243a54;
+}
+
+.navBar .logo{
+    display: block;
+    margin-right: 30px;
+}
+
+.navBar .logo img{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-basis: content;
+}
+
+.navLinks ul{
+    display: flex;
+    top: 8px;
+}
+
+.navLinks ul li {
+    list-style: none;
+    display: block;
+    position: relative;
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+.ri-arrow-down-s-line{
+    padding: 0px 0px 0px 10px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #243a54;
+}
+
+.navLinks ul li a{
+    display: inline-block;
+    color: #243a54;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    justify-content: center;
+
+    transition: all .1s ease-in-out;
+}
+
+.navLinks ul li a::after{
+    content: '';
+    height: 5px;
+    width: 100%;
+    align-content: center;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+.navLinks ul li a:hover::after{
+    background: #243a54;
+}
+
+.container{
+    /* width: 80%;
+    padding: 0 80px;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: solid 2px #243a54; */
+
+    display: block;
+    
+}
+
+.container .content{
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
+
+.container .content .texts{
+    margin: 0 auto;
+    max-width: 820px;
+    text-align: center;
+}
+.container .content .texts h3{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: red;
+}
+
+/* .container h3{
+    font-size: 10px;
+    font-weight: 200;
+    padding: 20px;
+
+}
+.container img {
+    width: 100%;
+    cursor: pointer;
+} */
