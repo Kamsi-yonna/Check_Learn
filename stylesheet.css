@@ -24,14 +24,14 @@
 .navBar{
     align-items: center;
     display: flex;
-    /* height: var(--headerHeight); */
     justify-content: space-between;
-    width: 100%;
-    padding: 50px;
+    margin: 50px;
+    padding-bottom: 40px;
     box-sizing: border-box;
 
-    border-bottom: solid 3px #243a54;
+    border-bottom: solid 1px #243a54;
 }
+
 
 .navBar .logo{
     display: block;
@@ -64,9 +64,14 @@
 }
 
 .ri-arrow-down-s-line{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 2px;
     padding: 0px 0px 0px 10px;
-    font-size: 12px;
-    font-weight: 100;
+    font-size: 15px;
+    height: 10px;
+    font-weight: 800;
     color: #243a54;
 }
 
@@ -89,7 +94,7 @@
     background: transparent;
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 35px;
 }
 
 .navLinks ul li a:hover::after{
@@ -105,13 +110,13 @@
     padding-top: solid 2px #243a54; */
 
     display: block;
+    justify-content: center;
+    text-align: center;
     
 }
 
 .container .content{
-    margin-top: 80px;
-    margin-bottom: 80px;
-
+    margin: 0 80px;
 }
 
 
@@ -123,19 +128,38 @@
 .container .content .texts h3{
     font-family: 'Inter';
     font-size: 12px;
-    font-weight: 500;
-    letter-spacing: .1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: red;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.container .content .texts h3:hover{
+    text-decoration: 1px underline;
 }
 
-/* .container h3{
-    font-size: 10px;
-    font-weight: 200;
-    padding: 20px;
+.container .content .texts h1{
+    font-family: 'cambon';
+    font-size: 42px;
+    line-height: 1.34;
+    font-style: normal;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
 
 }
-.container img {
+.container .content .texts h1:hover{
+    color: #243a54;
+}
+
+.container .content .banner{
+    margin-top: 20px;
+    display: block;
+    position: relative;
+}
+
+.container .content img {
     width: 100%;
     cursor: pointer;
-} */
+}
