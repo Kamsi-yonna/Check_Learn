@@ -112,7 +112,9 @@
     display: block;
     justify-content: center;
     text-align: center;
-    
+    /* width: 80%; */
+    margin: 0 20px;
+    box-sizing: border-box;
 }
 
 .container .content{
@@ -126,7 +128,6 @@
     text-align: center;
 }
 .container .content .texts h3{
-    font-family: 'Inter';
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -162,4 +163,91 @@
 .container .content img {
     width: 100%;
     cursor: pointer;
+}
+
+/* Stories Content */
+
+.story{
+    background-color: #b44545;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.storyTitle{
+    text-align: left;
+    margin: 30px 0px;
+}
+.storyTitle h2{
+    font-family: 'cambon';
+    font-size: 30px;
+    line-height: 1.34;
+    font-weight: 300;
+    color: #000;
+    cursor: default;
+}
+
+.storySlides{
+    /* display: flex; */
+    /* text-align: left; */
+}
+
+.wrapper{
+    
+
+}
+
+.storyItem{
+    display: flex;
+    text-align: left;
+    
+}
+.ri-arrow-left-s-line .ri-arrow-right-s-line{
+    font-size: 20px;
+    z-index: 1;
+    color: black;
+}
+.storyItemContent{
+    padding: 0px 10px;
+    width: 80%;
+    background-color: #f5f3f2;
+    cursor: grab;
+}
+
+.storyItemContent img{
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.storyItem p{
+    width: 50%;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.storyItem p:hover{
+    text-decoration: 1px underline;
+}
+
+.storyItem h3{
+    font-family: 'cambon';
+    font-size: 22px;
+    line-height: 1.34;
+    font-weight: 300;
+    color: #000;
+    cursor: pointer;
+}
+
+.storyItem h3:hover{
+    color: #243a54;
 }
