@@ -168,7 +168,7 @@
 /* Stories Content */
 
 .story{
-    background-color: #b44545;
+    background-color: #ffffff;
     display: block;
     justify-content: center;
     text-align: center;
@@ -192,28 +192,31 @@
 }
 
 .storySlides{
-    /* display: flex; */
-    /* text-align: left; */
+    display: flex;
+    text-align: left;
 }
 
 .wrapper{
-    
-
+    display: flex;
 }
 
 .storyItem{
     display: flex;
     text-align: left;
-    
 }
-.ri-arrow-left-s-line .ri-arrow-right-s-line{
-    font-size: 20px;
-    z-index: 1;
+
+.wrapper .ri-arrow-left-s-line, .ri-arrow-right-s-line {
+    font-size: 50px;
     color: black;
+    cursor: pointer;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
+
 .storyItemContent{
-    padding: 0px 10px;
-    width: 80%;
+    padding: 0px 5px;
+    width: 90%;
     background-color: #f5f3f2;
     cursor: grab;
 }
