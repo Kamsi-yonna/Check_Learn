@@ -156,6 +156,7 @@
 
 .container .content .banner{
     margin-top: 20px;
+    margin-bottom: 80px;
     display: block;
     position: relative;
 }
@@ -168,21 +169,22 @@
 /* Stories Content */
 
 .story{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #fff;
     display: block;
     justify-content: center;
     text-align: center;
-    margin: 60px;
-    padding-left: 20px;
+    margin: 30px;
+    padding-left: 40px;
     padding-right: 20px;
     box-sizing: border-box;
 }
 
-.storyTitle{
-    text-align: left;
-    margin: 30px 0px;
-}
+
 .storyTitle h2{
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 30px;
     font-family: 'cambon';
     font-size: 30px;
     line-height: 1.34;
@@ -191,16 +193,16 @@
     cursor: default;
 }
 
-.storySlides{
+/* .storySlides{
     display: flex;
     text-align: left;
-}
+} */
 
-.wrapper{
+/* .wrapper{
     display: flex;
-}
+} */
 
-.storyItem{
+.storyItem, .wrapper, .storySlides{
     display: flex;
     text-align: left;
 }
@@ -217,7 +219,7 @@
 .storyItemContent{
     padding: 0px 5px;
     width: 90%;
-    background-color: #f5f3f2;
+    background-color: #fff;
     cursor: grab;
 }
 
@@ -229,9 +231,9 @@
 
 .storyItem p{
     width: 50%;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: red;
     margin-bottom: 10px;
@@ -253,4 +255,122 @@
 
 .storyItem h3:hover{
     color: #243a54;
+}
+
+.longreads{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    margin: 70px;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+}
+
+.longreadsItems{
+    justify-content: center;
+    display: flex;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.longreadsContent{
+    /* padding: 0px 5px; */
+    width: 100%;
+    background-color: #ffffff;
+    cursor: grab;
+    border-bottom: solid .5px #243a54;
+    margin: 0 10px;
+
+}
+
+.longreadsContent img{
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.longreadsContent h3{
+    width: 100%;
+
+    font-family: 'cambon';
+    font-size: 24px;
+    line-height: 1.34;
+    font-weight: 300;
+    color: #000;
+    cursor: pointer;
+}
+
+ h3:hover{
+    color: #243a54;
+}
+
+.longreadsContent p{
+    font-family: 'cambon';
+    font-size: 20px;
+    line-height: 1.34;
+    font-weight: 100;
+    color: #3c3c3c;
+    margin-bottom: 5px;
+}
+
+.longreadsContent h4{
+    font-family: 'cambon';
+    font-size: 15px;
+    line-height: 1.34;
+    font-weight: 100;
+    color: #3c3c3c;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.sidebar{
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.sideimg {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+.sideText{
+    /* justify-content: space-evenly; */
+}
+
+.sideContent p{
+    width: 50%;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: red;
+    margin: 15px 0px 15px 0px;
+    cursor: pointer;
+
+}
+.sideContent h2{
+    font-family: 'cambon';
+    font-size: 22px;
+    line-height: 1.34;
+    font-weight: lighter;
+    color: #232323;
+    cursor: pointer;
+    padding:  20px 0px 20px 0px;
+    border-bottom: solid 1px #3c3c3c;
+
+}
+.mfa h3{
+    width: 100%;
+    background-color: #f5f3f2;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    font-family: 'cambon';
+    font-size: 45px;
+    line-height: 1.34;
+    font-weight: lighter;
+    color: #060606;
+
 }
