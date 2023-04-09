@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;
     height: 330px;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerImg img {
@@ -278,6 +280,8 @@
 
 }
 
+
+
 .longreadsItems{
     justify-content: center;
     display: flex;
@@ -342,6 +346,7 @@
     margin-left: 50px;
 }
 
+
 .sideimg {
     text-align: center;
     cursor: pointer;
@@ -387,4 +392,14 @@
     font-weight: lighter;
     color: #060606;
 
+}
+
+.longreadsA{
+    display: flex;
+    /* width: 100%; */
+    background-color: #fff;
+    justify-content: center;
+    margin: 70px;
+    /* box-sizing: border-box; */
+    border: 1px solid black;
 }
