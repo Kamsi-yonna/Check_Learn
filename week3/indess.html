@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Leave</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- <h1>Leave us a review</h1> -->
+            <div class="imageContainer">
+            </div>
+            <form class="contactForm" id="contact-form">
+                <!-- <div class="image container">
+                    <img src="img/bannerB.jpg">
+                </div> -->
+
+                <h1>Leave us a review</h1>
+                <div>
+                    <div class="input">
+                        <h2>Please tell us your name</h2>
+                        <input type="text" id="first-name" name="firstName" required placeholder="First name">
+                        <input type="text" id="last-name" name="lastName" required placeholder="Last name">
+                    </div>
+            
+                    <div class="input">
+                        <h2>Enter your email</h2>
+                        <input type="text" id="company" name="company" required placeholder="Company name">
+                        <input type="email" id="work-email" name="workEmail" required placeholder="Company email">
+                    </div>
+                </div>
+
+                <label><h2>Company Size</h2></label>
+                <select id="company-size" name="companySize" required>
+                <option value="">-- Select Company Size --</option>
+                <option value="0-10">0-10</option>
+                <option value="11-50">11-50</option>
+                <option value="51-100">51-100</option>
+                </select>
+
+                <label>Funding Stage</label>
+                <select id="funding-stage" name="fundingStage">
+                <option value="">-- Select Funding Stage --</option>
+                <option value="under N100k">Under N100k</option>
+                <option value="N100k - N500k">N100k - N500k</option>
+                <option value="N500k - N1m">N500k - N1m</option>
+                </select>
+
+                <textarea id="other-message" name="otherMessage" placeholder="Kindly let us know how to serve you better. "></textarea>
+
+                <input id="applicant-email" name="applicantEmail" value="example@example.com">
+
+            <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
