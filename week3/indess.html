@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Leave</title>
   </head>
   <body>
+
+    <div class="navbar">
+        <div class="logo">
+          <img src="img/check-dc-full-logo-white.png" alt="Logo"><h4>- REVIEW</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
     <div class="container">
         <div class="wrapper">
             <!-- <h1>Leave us a review</h1> -->
@@ -33,31 +47,74 @@
                     </div>
                 </div>
 
-                <label><h2>Company Size</h2></label>
-                <select id="company-size" name="companySize" required>
-                <option value="">-- Select Company Size --</option>
-                <option value="0-10">0-10</option>
-                <option value="11-50">11-50</option>
-                <option value="51-100">51-100</option>
-                </select>
+                <div class="dropDwn">
+                    <h2>Company Size</h2>
+                    <select id="company-size" name="companySize" required>
+                    <option value="">Select Company Size</option>
+                    <option value="0-10">0-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-100">51-100</option>
+                    </select>
+                </div>
 
-                <label>Funding Stage</label>
-                <select id="funding-stage" name="fundingStage">
-                <option value="">-- Select Funding Stage --</option>
-                <option value="under N100k">Under N100k</option>
-                <option value="N100k - N500k">N100k - N500k</option>
-                <option value="N500k - N1m">N500k - N1m</option>
-                </select>
+                <div class="dropDwn">
+                    <h2>Funding Stage</h2>
+                    <select id="funding-stage" name="fundingStage">
+                    <option value="">Select Funding Stage</option>
+                    <option value="under N100k">Under N100k</option>
+                    <option value="N100k - N500k">N100k - N500k</option>
+                    <option value="N500k - N1m">N500k - N1m</option>
+                    </select>
+                </div>
 
-                <textarea id="other-message" name="otherMessage" placeholder="Kindly let us know how to serve you better. "></textarea>
+                <textarea id="other-message" placeholder="Kindly let us know how we can serve you better."></textarea>
 
-                <input id="applicant-email" name="applicantEmail" value="example@example.com">
-
-            <input type="submit" value="Submit">
-
+                <button type="submit" class="btn">Submit</button>
+               
             </form>
         </div>
     </div>
+
+    <!-- <section class="footer">
+        <h4>About Us</h4>
+        <p>This University started from 1990 by Robert Junier. From starting limited courses are available but now all types of<br>courses are open for National and International Students as well as Online Courses are available.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Designed by Kamsy</p>
+    </section>    -->
+
+    <section class="footer">
+        <div>
+            <img src="img/check-dc-full-logo-white.png" alt="">
+        </div>
+        <div>
+            <div>
+                <h2>follow us on social media</h2>
+                <div class="icons">
+                    <div class="icon facebook">
+                        <span><i class="ri-facebook-box-fill"></i></span>
+                    </div>
+                    
+                    <div class="icon instagram">
+                        <span><i class="ri-instagram-fill"></i></span>
+                    </div>
+                    
+                    <div class="icon twitter">
+                        <span><i class="ri-twitter-fill"></i></span>
+                    </div>
+     
+                    <div class="icon youtube">
+                        <span><i class="ri-youtube-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+            <h3>Start Something Today <span>.</span></h3>
+        </div>
+    </section>
 
     <script src="script.js"></script>
     </body>
