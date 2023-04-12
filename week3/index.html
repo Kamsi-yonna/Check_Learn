@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Review Form</title>
+  </head>
+  <body>
+
+    <div class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo"><h4>- REVIEW</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+    
+            <form class="contactForm" id="contact-form">
+
+                <h1>Leave us a review.</h1>
+                <div>
+                    <div class="input">
+                        <h2>Please tell us your name</h2>
+                        <input type="text" id="firstName" placeholder="First name" required>
+                        <input type="text" id="lastName" placeholder="Last name" required>
+                    </div>
+            
+                    <div class="input">
+                        <h2>Email</h2>
+                        <input type="text" id="company" placeholder="Company name" required>
+                        <input type="email" id="workEmail" placeholder="Company email" required>
+                    </div>
+                </div>
+
+                <div class="dropDwn">
+                    <h2>Company Size</h2>
+                    <select id="company-size">
+                    <option value="">Select Company Size</option>
+                    <option value="0-10">0-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-100">51-100</option>
+                    </select>
+                </div>
+
+                <div class="dropDwn">
+                    <h2>Funding Stage</h2>
+                    <select id="funding-stage" name="fundingStage">
+                    <option value="">Select Funding Stage</option>
+                    <option value="under N100k">Under N100k</option>
+                    <option value="N100k - N500k">N100k - N500k</option>
+                    <option value="N500k - N1m">N500k - N1m</option>
+                    </select>
+                </div>
+
+                <textarea maxlength="180" placeholder="Kindly let us know how we can serve you better."></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+               
+            </form>
+
+            <div class="imageContainer">
+                <img src="img/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+
+        <div class="slogan">
+            <div class="sloganImg">
+                <img src="img/slogan.png" alt="">
+            </div>
+            
+        </div>
+
+        <div class="media">
+
+            <div class="mediaLinks">
+
+                <h2>follow us on social media</h2>
+
+                <div class="icons">
+                    <div class="youtube">
+                        <span><i class="ri-basketball-line"></i></span>
+                    </div>
+
+                    <div class="medium">
+                        <span><i class="ri-medium-fill"></i></span>
+                    </div>
+
+                    <div class="instagram">
+                        <span><i class="ri-instagram-line"></i></span>
+                    </div>
+
+                    <div class="twitter">
+                        <span><i class="ri-twitter-fill"></i></span>
+                    </div>
+                
+                    <div class="linkedin">
+                        <span><i class="ri-linkedin-fill"></i></span>
+                    </div>
+    
+                </div>
+            </div>
+
+            <h3>Start Something Today<span>.</span></h3>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
