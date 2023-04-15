@@ -55,6 +55,72 @@ form.addEventListener('submit', function(event){
   // Reset the form
   form.reset();
 
+
+// //obtain the form element using the appropriate HTML Dom method
+
+
+
+
+// //const form = document.getElementById('contactForm');
+// ////Add event Listener
+// //form.addEventListener('submit', callbackFunction);
+// //
+// ////Define function
+// //function callbackFunction(event) {
+// //    event.preventDefault();
+// //    //get data from the form 
+// //    const myFormData = new FormData(event.target);
+// //    const formDataObj = Object.fromEntries(myFormData.entries());
+// //    console.log(formDataObj);
+// //    
+// //    
+// //    
+// //    
+// ////    const myFormData = new FormData(event.target);
+// ////    const formDataObj = Object.fromEntries(myFormData.entries());
+// ////    
+// ////    console.log(formDataObj);
+// //}
+
+
+// const form = document.getElementById('contactForm');
+// const firstName = document.getElementById('firstName');
+// const lastName = document.getElementById('lastName');
+// const company = document.getElementById('company');
+// const workEmail = document.getElementById('workEmail');
+// //const companySize = document.getElementById('companySize').value;
+// //const fundingStage = document.getElementById('fundingStage').value;
+
+// function getApplicantName() {
+//   return `${firstName.value} ${lastName.value}`;
+// }
+
+// form.addEventListener('submit', function(event) {
+//   event.preventDefault(); //prevents the form from auto Submitting
+
+//   //selecting the dropdown option
+//   let companySize = document.querySelector('#companySize').value;
+//   let fundingStage = document.querySelector('#fundingStage').value;
+//   let textArea = document.getElementById('textArea').value;
+
+//   const formEntry = {
+//     applicantName: getApplicantName(),
+//     firstName: firstName.value,
+//     lastName: lastName.value,
+//     company: company.value,
+//     workEmail: workEmail.value,
+//     companySize: companySize,
+//     fundingStage: fundingStage,
+//     textArea: textArea,
+//   };
+//   console.log(formEntry);
+// });
+
+
+
+
+
+
         
 
 
