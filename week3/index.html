@@ -1,342 +1,124 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins";
-  letter-spacing: 1px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Review Form</title>
+</head>
+  <body>
+    <section class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo"><h4>- REVIEW</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
 
-body{
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(185deg,#ffffff,#cecece,#a9a9a9);
-  background-size: 180% 180%;
-  animation: gradient-animation 15s ease infinite;
+    <section class="container">
+        <div>
+            <form id="contactForm"  class="wrapper">
+                <div class="heading">
+                    <h1>Leave us a review.</h1>
+                </div>
+                <div class="inputs">
+                    <h2>Please tell us your name</h2>
+                    <input type="text" id="firstName" placeholder="First name" required maxlength="20">
+                    <input type="text" id="lastName" placeholder="Last name" required maxlength="30">
+                </div>
+        
+                <div class="inputs">
+                    <h2>Email</h2>
+                    <input type="text" id="company" placeholder="Company name" required maxlength="30">
+                    <input type="email" id="workEmail" placeholder="Company email" required maxlength="30">
+                </div>
 
-}
+                <div class="dropDown">
+                    <h2>Company Size</h2>
+                    <select id="companySize" name="companySize">
+                    <option value="">Select Company Size</option>
+                    <option value="0-10">0-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-100">51-100</option>
+                    </select>
+                </div>
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+                <div class="dropDown">
+                    <h2>Funding Stage</h2>
+                    <select id="fundingStage" name="fundingStage">
+                    <option value="">Select Funding Stage</option>
+                    <option value="under N100k">Under N100k</option>
+                    <option value="N100k - N500k">N100k - N500k</option>
+                    <option value="N500k - N1m">N500k - N1m</option>
+                    </select>
+                </div>
 
-.navbar {
-  /* border: 2px solid black; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 70px ;
-}
+                <div class="textArea">
+                    <textarea id="textArea" maxlength="180" placeholder="Kindly let us know how we can serve you better."></textarea>
+                </div>
 
-.logo {
-  /* border: 2px solid black; */
-  display: flex;
-  font-size: 12px;
-  align-items: center;
-  color: #000;
-}
+                <div class="button">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="imageContainer">
+            <!-- <img src="img/bannerA.jpg" alt=""> -->
+        </div>
 
-.logo img{
-  /* border: 2px solid black; */
-  width: 50px;
-  cursor: pointer;
-  margin-right: 5px;
-}
+    </section>
 
-.nav-links{
-  /* border: 2px solid black; */
-  display: flex;
-}
+    <section class="footer">
 
-.nav-links li{
-  /* border: solid 2px black; */
-  margin: 5px 10px;
-  font-size: 15px;
-  list-style: none;
-}
+        <div class="slogan">
+            <div class="sloganImg">
+                <img src="img/slogan.png" alt="">
+            </div>
+        </div>
 
-.nav-links li a{
-  /* border: solid 2px black; */
-  color: #000;
-  text-decoration: none;
-}
+        <div class="media">
+            <div class="mediaLinks">
+                <h2>follow us on social media</h2>
+                <div class="icons">
+                    <div class="youtube">
+                        <span><i class="ri-basketball-line"></i></span>
+                    </div>
 
-.nav-links li::after{
-  content: '';
-  width: 0%;
-  height: 4px;
-  background: #0074a1;
-  display: block;
-  transition: .8s;    
-}
+                    <div class="medium">
+                        <span><i class="ri-medium-fill"></i></span>
+                    </div>
 
-.nav-links li:hover::after{
-  width: 100%;
-}
+                    <div class="instagram">
+                        <span><i class="ri-instagram-line"></i></span>
+                    </div>
 
-.container{
-  border: 5px black solid;
-  box-shadow: 3px 3px 10px #030303;
-  background-color: #FFF;
-  border-radius: 50px;
-  display: flex;
-  margin: 40px 40px;
-  width: 90%;
-  justify-content: space-between;
-}
+                    <div class="twitter">
+                        <span><i class="ri-twitter-fill"></i></span>
+                    </div>
+                
+                    <div class="linkedin">
+                        <span><i class="ri-linkedin-fill"></i></span>
+                    </div>
+    
+                </div>
+            </div>
 
-.imageContainer{
-  /* border: 2px solid black; */
-  position: relative;
-  width: 50%;
-  background-image: url(img/bannerA.jpg);
-  background-position: center; 
-  background-size: cover;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-}
+            <h3>Start<br>Something<br> Today<span>.</span></h3>
+        </div>
+    </section>
 
-.imageContainer img{
-  /* border: 2px solid black; */
-  /* height: 60%; */
-}
+    <!-- Hidden input -->
+    <input type="hidden" id="applicantEmail" name="applicantEmail" value="example@mail.com">
 
-.wrapper{
-  /* border: 2px black solid; */
-  padding: 10px;
-  display: block;
-  text-align: left;
-  margin-left: 20px;
-}
+    <script src="script.js" ></script>
+    </body>
 
-.wrapper .heading{
-  /* border: 2px solid black; */
-  color: #000000;
-  font-size: 30px;
-  margin: 5px 0px;
-}
-.wrapper .inputs{
-  display: block;
-  /* border: 2px solid black; */
-  color: #000000;
-  text-decoration: ;
-  font-size: 10px;
-  margin: 5px 0px;
-}
-
-.wrapper .inputs input {
-  border: 2px solid black;
-  color: #000;
-  background-color: #02020200;
-  box-sizing: border-box;
-  font-size: 20px;
-  margin: 10px 0px;
-  margin-right: 10px;
-  padding: 5px 0px 0px 5px;
-  border-radius: 5px;
-  outline: none;
-}
-
-.wrapper .inputs input:focus{
-  border: 2px solid #8f8f8f; 
-  background-color: #fff;
-  transition: ease-in-out .5s;
-}
-
-.dropDown{
-  /* border: 2px solid black; */
-  display: block;
-  color: #000000;
-  font-size: 15px;
-  margin: 5px 0px;
-  position: relative;
-}
-
-.dropDown select{
-  width: 100%;
-  border-radius: 5px;
-  font-size: 15px;
-  border: #242424 solid 1px;
-  color: #001802;
-  font-weight: 700;
-  padding: 5px 2px;
-  background-color: #ffffff ;
-  outline: none;
-  margin-top: 5px;
-  box-shadow: 1px 1px white, 2px 2px black ;
-  margin-bottom: 10px;
-}
-.dropDown select option{
-  background-color: #fff;
-}
-
-textarea{
-  border: 2px solid #000000; 
-  padding: 5px 0px 0px 5px;
-  width:100%;
-  font-size: 20px;
-  resize: none;
-  box-shadow: 2px 2px #fff, 4px 4px #000;
-  height:150px;
-  outline: none;
-  background-color: #00000000;
-  color: #000;
-}
-
-textarea:focus{
-  outline: none;
-  box-shadow: 3px 3px #fff, 5px 5px #000;
-  transition: ease-in-out .5s;
-  
-}
-
- 
-.btn {
-  /* background: #34568B; */
-  background: #ebe9e9;
-  color: #000;
-  text-transform: uppercase;
-  /* border: 2px solid #8ca7ff; */
-  box-shadow:  4px 4px #4b4b4b, 5px 5px #fff inset;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  font-size: 20px;
-  margin: 20px 0;
-  border-radius: 5px;
-  cursor: pointer;
-
-  transition: .1s ease-in-out ;
-}
-
-.btn:hover {
-  border: 2px solid #000d36;
-  box-shadow:  6px 6px #000, 4px 4px #000 inset;
-}
-
-.footer{
-  /* border: 2px solid black; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 70px ;
-}
-
-.slogan img{
-  /* border: 2px solid black; */
-  width: 30%;
-  cursor: pointer;
-}
-
-.media{
-  display: block;
-  text-align: left;
-  /* border: 2px solid black; */
-  color: #000 ;
-}
-
-.media .mediaLinks h2 {
-  /* border:2px solid black; */
-  font-size: 15px;
-  text-transform: capitalize;
-}
-
-.media .mediaLinks .icons {
-  justify-content: left;
-  /* border:2px solid black; */
-  padding: 5px;
-  display: flex;
-}
-
-.media .mediaLinks .icons i {
-  /* border:2px solid black; */
-  font-size: 20px;
-  cursor: pointer;
-  margin: 0px 5px;
-  transition: ease-in-out 0.3s;
-}
-
-.media .mediaLinks .icons i:hover {
-  color: #fff;
-}
-
-.media h3 {
-  /* border:2px solid black; */
-  font-size: 20px;
-  text-transform: capitalize;
-  color: #000;
-}
-
-.media h3 span {
-  color: #00c3d1;
-  font-size: 20px;
-}
-
-/* For screens smaller than 768px */
-@media (max-width: 767px) {
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    height: 10vh;
-  }
-
-  .nav-links {
-    display: flex;
-  }
-
-  .nav-links li {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .logo h4 {
-    display: none;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .wrapper{
-    text-align: left;
-  }
-  
-  .wrapper input{
-    width: 100%;
-    text-align: left;
-  }
-
-  .imageContainer {
-    display: none;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
-  }
-
-  .media {
-    display: none;
-  }
- 
-  .slogan {
-    margin-bottom: 20px;
-  } 
-
-}
+</html>
